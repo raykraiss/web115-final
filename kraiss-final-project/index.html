@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+
+    <title>Task Manager</title>
+
+</head>
+
+<body id="body">
+
+    <main id="main">
+
+        <h1>Task Manager</h1>
+
+        <!-- User input form -->
+        <form id="taskForm">
+
+            <div>
+                <label for="userTask">Task Name:</label>
+                <input type="text" id="userTask" required>
+            </div>
+
+            <div>
+                <label for="priorSel">Priority:</label>
+                <select id="priorSel">
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+            </div>
+
+            <div>
+                <input type="checkbox" id="isImportant">
+                <label for="isImportant">Important</label>
+            </div>
+
+            <input type="submit" id="submitBtn" value="Create Task"></submit>
+
+        </form>
+
+        <section id="settings">
+        
+            <button id="sortBtn">Sort tasks</button>
+
+            <button id="darkBtn">Dark mode</button>
+        
+        </section>
+
+        <!-- Dynamic task list display -->
+
+        <h2>My Tasks</h2>
+
+        <div id="taskManager">
+
+            <!-- <div id="taskDiv">
+
+                <p id="taskName">
+                    Task Name
+                </p>
+
+                <p id="datePara">
+                    01/01
+                </p>
+
+                <span>
+                    <input type="checkbox" id="isDone">
+                    <label for="isDone">Done</label>
+                </span>
+
+                <button id="deleteBtn">Delete Task</button>
+
+            </div> -->
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
