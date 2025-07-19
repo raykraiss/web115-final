@@ -22,8 +22,10 @@ window.addEventListener('load', function () {
 
             // create task name and date elements
             const taskName = document.createElement('p');
+            const priorPara = document.createElement('p');
             const datePara = document.createElement('p');
-            taskName.innerHTML = (task.userTask + " (" + task.priority + ")");
+            taskName.textContent = (task.userTask);
+            priorPara.textContent = (task.priority);
             datePara.textContent = (task.date);
 
             // if important then red
@@ -90,7 +92,7 @@ window.addEventListener('load', function () {
 
             // append and render elements on page
             doneDiv.append(isDoneCheckbox, isDoneLabel);
-            taskDiv.append(taskName, datePara, doneDiv, deleteBtn);
+            taskDiv.append(taskName, priorPara, datePara, doneDiv, deleteBtn);
             taskManager.appendChild(taskDiv);
         });
 
